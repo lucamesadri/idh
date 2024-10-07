@@ -1,10 +1,12 @@
 package br.edu.univille.poo.idh.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@Entity
 public class Pais {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
